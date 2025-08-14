@@ -1,0 +1,6 @@
+*.idx
+*.ilg
+*.ind
+*.pdf
+*.toc
+!**/Immagini/*.pdf

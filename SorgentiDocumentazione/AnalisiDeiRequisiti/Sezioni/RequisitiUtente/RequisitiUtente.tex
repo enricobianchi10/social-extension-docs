@@ -1,0 +1,20 @@
+\section{Requisiti utente}
+\label{sec:requisiti_utente}
+I \glossario{requisiti utente} catturano i bisogni degli utenti del sistema, sono quindi descrizioni astratte e non tecniche dei requisiti funzionali e non.
+Vengono ottenuti dall'analisi del capitolato e dai verbali esterni.
+Servono come base per l'analisi dei requisiti infatti vengono approfonditi tramite l'utilizzo dei diagrammi dei casi d'uso per poi essere formalizzati in \glossario{requisiti software}.   
+
+Per semplificare la lettura e la comprensione dei \glossario{requisiti utente} sono stati rappresentati in forma tabellare divisi per \glossario{requisiti utente} obbligatori e \glossario{requisiti utente} facoltativi.
+A ogni \glossario{requisito utente} viene assegnato un identificativo univoco che segue la forma:
+\begin{lstlisting}
+    RU[O/F]-[N]
+\end{lstlisting}
+Dove:
+\begin{enumerate}
+    \item \lstinline{N} è un valore intero positivo crescente.
+    \item \lstinline{O} indica che il \glossario{requisito utente} è obbligatorio mentre \lstinline{F} indica che il \glossario{requisito utente} è facoltativo.
+\end{enumerate} 
+
+\input{Sezioni/RequisitiUtente/Sottosezioni/RequisitiUtenteObbligatori.tex}
+
+\input{Sezioni/RequisitiUtente/Sottosezioni/RequisitiUtenteOpzionali.tex}
