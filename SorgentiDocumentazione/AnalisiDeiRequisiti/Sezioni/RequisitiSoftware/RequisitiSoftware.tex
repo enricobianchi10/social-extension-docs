@@ -1,0 +1,36 @@
+\section{Requisiti Software}
+\label{sec:requisiti_software}
+In questa sezione vengono elencati i requisiti software individuati per la realizzazione del progetto.
+I requisiti sono stati definiti tramite l'analisi degli use case individuati e le riunioni con il tutor aziendale.
+I requisiti software si dividono in:
+\begin{enumerate}
+    \label{en:req_type}
+    \item Requisiti funzionali: definiscono le funzionalità attese dal sistema.
+    \item Requisiti non funzionali: definiscono gli attributi attesi del sistema nel suo insieme.
+    Si dividono in:
+    \begin{enumerate}
+        \item Requisiti di qualità: impongono dei vincoli sulla qualità del prodotto.
+        \item Requisiti di vincolo: impongono dei vincoli sullo svolgimento del progetto.
+    \end{enumerate}
+\end{enumerate}
+Ogni requisito software viene descritto indicando le seguenti informazioni:
+\begin{enumerate}
+    \item Identificativo che segue la sintassi:
+    \begin{lstlisting}
+        R<T><O/F>-<N>
+    \end{lstlisting}
+    Dove:
+    \begin{enumerate}
+        \item \lstinline{T} indica il tipo di requisito software che può variare tra \lstinline{F}(funzionali), \lstinline{Q}(di qualità) e \lstinline{V}(di vincolo).
+        \item \lstinline{O} indica che il requisito è obbligatorio mentre \lstinline{F} indica che il requisito è facoltativo.
+        \item \lstinline{N} è un numero crescente rispetto al tipo di requisito che parte dal valore 1.
+    \end{enumerate}
+    \item Descrizione testuale.
+    \item Specifica, ovvero la lista di sotto requisiti che approfondiscono il requisito software principale.
+    Ogni sotto requisito è identificato usando l'identificativo del requisito padre a cui viene aggiunto in coda un secondo numero crescente che parte da 1 (preceduto da un punto).
+    \item Una lista degli use case che hanno dato origine al requisito software.
+\end{enumerate}
+
+\input{Sezioni/RequisitiSoftware/Sottosezioni/RequisitiFunzionali.tex}
+
+\input{Sezioni/RequisitiSoftware/Sottosezioni/RequisitiNonFunzionali.tex}

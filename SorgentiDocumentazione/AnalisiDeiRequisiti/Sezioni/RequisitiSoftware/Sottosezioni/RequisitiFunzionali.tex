@@ -1,0 +1,197 @@
+\subsection{Requisiti funzionali}
+\label{subsec:requisiti_funzionali}
+I requisiti funzionali sono raggruppati usando una divisione ad alto livello del sistema in due componenti, ovvero 
+\begin{enumerate}
+    \item Logica di presentazione: si occupa della presentazione delle informazioni agli utenti.
+    \item Logica di business: si occupa dell'elaborazione delle informazioni mostrate agli utenti e ottenute dagli utenti.
+\end{enumerate}
+
+\subsubsection{Logica di presentazione}
+
+\paragraph{Obbligatori}
+
+\begin{freq}
+    {RFO-1}
+    {Il sistema deve permettere la visualizzazione di un messaggio che indica lo stato delle tab aperte}
+    \label{rf:RFO-1}%
+
+    \subreq{RFO-1.1}{\hyperref[uc:UC-4]{UC-4}}{Il sistema deve visualizzare un messaggio che indica l'assenza di una tab di Instagram aperta}
+    \subreq{RFO-1.2}{\hyperref[uc:UC-5]{UC-5}}{Il sistema deve visualizzare un messaggio che indica l'assenza del login nella tab di Instagram aperta}
+\end{freq}
+
+\begin{freq}
+    {RFO-2}
+    {Il sistema deve poter visualizzare gli elementi necessari per permettere la raccolta dei dati}
+    \label{rf:RF2-3}%
+
+    \subreq{RFO-2.1}{\hyperref[uc:UC-8]{UC-8}}{Il sistema deve visualizzare un pulsante che permetta di iniziare la raccolta dati}
+\end{freq}
+
+\begin{freq}
+    {RFO-3}
+    {Il sistema deve poter visualizzare gli elementi necessari per notificare l'esito della raccolta dati}
+    \label{rf:RFO-3}%
+
+    \subreq{RFO-3.1}{\hyperref[uc:UC-8]{UC-8}}{Il sistema deve visualizzare un messaggio che informa l'utente che la raccolta dei dati è in esecuzione}
+    \subreq{RFO-3.2}{\hyperref[uc:UC-8]{UC-8}}{Il sistema deve visualizzare un messaggio che indica il successo della raccolta dati}
+    \subreq{RFO-3.3}{\hyperref[uc:UC-8]{UC-8}}{Il sistema deve visualizzare un link all pagina dell'ultimo post di cui sono stati raccolti i dati}
+    \subreq{RFO-3.4}{\hyperref[uc:UC-8]{UC-8}}{Il sistema deve visualizzare un messaggio che indica il numero di post di cui sono stati raccolti i dati e il numero di post totale del profilo}
+    \subreq{RFO-3.5}{\hyperref[uc:UC-9]{UC-9}}{Se il caricamento della pagina di un post durante la raccolta non viene completato nei tempi previsti, il sistema deve visualizzare un messaggio che informa l'utente dell'errore}
+\end{freq}
+
+\begin{freq}
+    {RFO-4}
+    {Il sistema deve poter visualizzare gli elementi necessari per permettere la pubblicazione delle risposte ai nuovi commenti rilevati}
+    \label{rf:RFO-4}%
+
+    \subreq{RFO-4.1}{\hyperref[uc:UC-10]{UC-10}}{Il sistema deve visualizzare un pulsante che permetta di iniziare la pubblicazione delle risposte ai nuovi commenti}
+\end{freq}
+
+\begin{freq}
+    {RFO-5}
+    {Il sistema deve poter visualizzare gli elementi necessari per notificare l'esito della pubblicazione delle risposte ai nuovi commenti}
+    \label{rf:RFO-5}%
+
+    \subreq{RFO-5.1}{\hyperref[uc:UC-10]{UC-10}}{Il sistema deve visualizzare un messaggio che informa l'utente che la pubblicazione delle risposte è in esecuzione}
+    \subreq{RFO-5.2}{\hyperref[uc:UC-10]{UC-10}}{Il sistema deve visualizzare un messaggio che indica il successo della pubblicazione delle risposte ai commenti}
+    \subreq{RFO-5.3}{\hyperref[uc:UC-9]{UC-9}}{Se il caricamento della pagina di un post durante la pubblicazione non viene completato nei tempi previsti, il sistema deve visualizzare un messaggio che informa l'utente dell'errore}
+    \subreq{RFO-5.4}{\hyperref[uc:UC-11]{UC-11}}{Se si verifica un errore durante il recupero delle risposte ai commenti da pubblicare, il sistema deve visualizzare un messaggio che informa l'utente dell'errore}
+\end{freq}
+
+\begin{freq}
+    {RFO-6}
+    {Il sistema deve poter visualizzare gli elementi necessari per permettere il download dei dati raccolti in un file JSON}
+    \label{rf:RFO-6}%
+
+    \subreq{RFO-6.1}{\hyperref[uc:UC-12]{UC-12}}{Il sistema deve visualizzare un pulsante che permetta di iniziare il download del file JSON con i nuovi dati raccolti}
+    \subreq{RFO-6.2}{\hyperref[uc:UC-12]{UC-12}}{Il sistema deve visualizzare una finestra di dialogo che permetta di selezionare la cartella dove salvare il file}
+
+\end{freq}
+
+\begin{freq}
+    {RFO-7}
+    {Il sistema deve visualizzare gli elementi necessari per notificare l'esito del download del file}
+    \label{rf:RFO-7}%
+
+    \subreq{RFO-7.1}{\hyperref[uc:UC-12]{UC-12}}{Il sistema deve visualizzare un messaggio che indica il successo del download del file JSON}
+    \subreq{RFO-7.2}{\hyperref[uc:UC-13]{UC-13}}{Se il download del file viene interrotto, il sistema deve visualizzare un messaggio che informa l'utente dell'interruzione}
+\end{freq}
+
+\paragraph{Facoltativi}
+
+\begin{freq}
+    {RFF-1}
+    {Il sistema deve permettere la visualizzazione di un messaggio che indica il risultato dell'analisi del layout di Instagram}
+    \label{rf:RFF-1}%
+
+    \subreq{RFF-1.1}{\hyperref[uc:UC-1]{UC-1}}{Il sistema deve visualizzare un messaggio che informa l'utente che l'analisi del layout di Instagram è in esecuzione}
+    \subreq{RFF-1.2}{\hyperref[uc:UC-1]{UC-1}}{Se l'analisi del layout di Instagram ha esito positivo, il sistema deve mostrare un messaggio che ne conferma il successo}
+    \subreq{RFF-1.3}{\hyperref[uc:UC-2]{UC-2}}{Se l'analisi del layout di Instagram ha esito negativo, il sistema deve visualizzare un messaggio che indica l'impossibilità di effettuare una raccolta dati}
+    \subreq{RFF-1.4}{\hyperref[uc:UC-2]{UC-2}}{Se l'analisi del layout di Instagram ha esito negativo, il sistema deve visualizzare un messaggio che indica ogni elemento del layout Instagram non trovato}
+\end{freq}
+
+\begin{freq}
+    {RFF-2}
+    {Il sistema deve poter visualizzare gli elementi necessari per notificare l'esito del calcolo delle differenze tra i dati raccolti}
+    \label{rf:RFF-2}%
+
+    \subreq{RFF-2.1}{\hyperref[uc:UC-6]{UC-6}}{Se vengono rilevate differenze tra i dati dell'ultima raccolta e quelli della raccolta precedente, il sistema deve visualizzare un messaggio che informa l'utente della presenza di variazioni nei nuovi dati raccolti}
+    \subreq{RFF-2.2}{\hyperref[uc:UC-6]{UC-6}}{Se non vengono rilevate differenze tra i dati dell'ultima raccolta e quelli della raccolta precedente, il sistema deve visualizzare un messaggio che informa l'utente che i nuovi dati raccolti coincidono con quelli precedenti}
+    \subreq{RFF-2.3}{\hyperref[uc:UC-7]{UC-7}}{Se si verifica un errore durante l'ottenimento dei dati delle ultime due raccolte, il sistema deve visualizzare un messaggio che informa l'utente dell'errore}
+\end{freq}
+
+\subsubsection{Logica di business}
+
+\paragraph{Obbligatori}
+
+\begin{freq}
+    {RFO-8}
+    {Il sistema deve poter gestire la persistenza dei dati raccolti}
+    \label{rf:RFO-8}%
+
+    \subreq{RFO-8.1}{\hyperref[uc:UC-8]{UC-8}}{Il sistema deve poter salvare in modo persistente i dati ottenuti durante una raccolta}
+    \subreq{RFO-8.2}{\hyperref[uc:UC-6]{UC-6}, \hyperref[uc:UC-8]{UC-8}, \hyperref[uc:UC-12]{UC-12}}{Il sistema deve poter ottenere i dati salvati durante l'ultima raccolta}
+\end{freq}
+
+\begin{freq}
+    {RFO-9}
+    {Il sistema deve poter gestire le tab aperte}
+    \label{rf:RFO-9}%
+
+    \subreq{RFO-9.1}{\hyperref[uc:UC-3]{UC-3}}{Il sistema deve poter ottenere una lista delle tab aperte nella finestra del Browser}
+    \subreq{RFO-9.2}{\hyperref[uc:UC-4]{UC-4}}{Il sistema deve poter ottenere l'URL di ogni tab aperta}
+    \subreq{RFO-9.3}{\hyperref[uc:UC-4]{UC-4}}{Il sistema deve poter verificare se l'URL di una tab aperta corrisponde a un dominio di Instagram}
+    \subreq{RFO-9.4}{\hyperref[uc:UC-5]{UC-5}}{Il sistema deve essere in grado di acquisire i cookie da una tab aperta}
+    \subreq{RFO-9.5}{\hyperref[uc:UC-5]{UC-5}}{Il sistema deve controllare che siano presenti i cookie di autenticazione di Instagram}
+\end{freq}
+
+\begin{freq}
+    {RFO-10}
+    {Il sistema deve poter navigare tra le pagine di Instagram}
+    \label{rf:RFO-10}%
+
+    \subreq{RFO-10.1}{\hyperref[uc:UC-8]{UC-8}, \hyperref[uc:UC-10]{UC-10}}{Il sistema deve poter ottenere il pulsante nel layout Instagram per accedere alla pagina del profilo personale}
+    \subreq{RFO-10.2}{\hyperref[uc:UC-8]{UC-8}}{Il sistema deve poter ottenere il numero di post totali pubblicati nel profilo personale}
+    \subreq{RFO-10.3}{\hyperref[uc:UC-8]{UC-8}, \hyperref[uc:UC-10]{UC-10}}{Il sistema deve poter ottenere il link per caricare l'ultimo post pubblicato nel profilo personale}
+    \subreq{RFO-10.4}{\hyperref[uc:UC-8]{UC-8}, \hyperref[uc:UC-10]{UC-10}}{Il sistema deve poter ottenere il pulsante nel layout Instagram per navigare al post successivo}
+    \subreq{RFO-10.5}{\hyperref[uc:UC-8]{UC-8}, \hyperref[uc:UC-10]{UC-10}, \hyperref[uc:UC-9]{UC-9}}{Il sistema deve poter determinare il cambiamento dell'URL della pagina}
+    \subreq{RFO-10.6}{\hyperref[uc:UC-8]{UC-8}, \hyperref[uc:UC-10]{UC-10}}{Il sistema deve poter determinare cambiamenti avvenuti al DOM della pagina}
+\end{freq}
+
+\begin{freq}
+    {RFO-11}
+    {Il sistema deve poter ottenere i dati di un post di Instagram}
+    \label{rf:RFO-11}%
+
+    \subreq{RFO-11.1}{\hyperref[uc:UC-8]{UC-8}}{Il sistema deve poter ottenere il numero del post}
+    \subreq{RFO-11.2}{\hyperref[uc:UC-8]{UC-8}}{Il sistema deve poter ottenere la caption del post}
+    \subreq{RFO-11.3}{\hyperref[uc:UC-8]{UC-8}}{Il sistema deve poter ottenere il numero di likes al post}
+    \subreq{RFO-11.4}{\hyperref[uc:UC-8]{UC-8}, \hyperref[uc:UC-10]{UC-10}}{Il sistema deve poter ottenere l'URL della pagina del post}
+    \subreq{RFO-11.5}{\hyperref[uc:UC-8]{UC-8}}{Il sistema deve poter ottenere il valore dell'attributo "src" nel caso in cui il post sia un'immagine}
+    \subreq{RFO-11.6}{\hyperref[uc:UC-8]{UC-8}, \hyperref[uc:UC-10]{UC-10}}{Il sistema deve poter ottenere testo e autore di tutti i commenti al post che non contengono solo immagini}
+    \subreq{RFO-11.7}{\hyperref[uc:UC-8]{UC-8}, \hyperref[uc:UC-10]{UC-10}}{Il sistema deve poter ottenere il pulsante per caricare i nuovi commenti}
+
+\end{freq}
+
+\begin{freq}
+    {RFO-12}
+    {Il sistema deve poter pubblicare una risposta ad un commento su un post di Instagram}
+    \label{rf:RFO-12}%
+
+    \subreq{RFO-12.1}{\hyperref[uc:UC-10]{UC-10}}{Il sistema deve poter identificare il commento corrispondente dato il testo, l'autore e l'URL del post in cui è pubblicato}
+    \subreq{RFO-12.2}{\hyperref[uc:UC-10]{UC-10}}{Il sistema deve poter ottenere il pulsante per rispondere ad un commento}
+    \subreq{RFO-12.3}{\hyperref[uc:UC-10]{UC-10}}{Il sistema deve poter ottenere l'area di testo in cui inserire il testo della risposta}
+    \subreq{RFO-12.4}{\hyperref[uc:UC-10]{UC-10}}{Il sistema deve poter inserire correttamente il testo della risposta nell'area di testo}
+    \subreq{RFO-12.5}{\hyperref[uc:UC-10]{UC-10}}{Il sistema deve poter ottenere il pulsante per pubblicare la risposta al commento}
+    \subreq{RFO-12.6}{\hyperref[uc:UC-10]{UC-10}, \hyperref[uc:UC-11]{UC-11}}{Il sistema deve poter ottenere le risposte ai commenti da pubblicare}
+
+\end{freq}
+
+\begin{freq}
+    {RFO-13}
+    {Il sistema deve poter gestire il download di un file JSON}
+    \label{rf:RFO-13}%
+
+    \subreq{RFO-13.1}{\hyperref[uc:UC-12]{UC-12}}{Il sistema deve poter effettuare il download di un file nel file system locale}
+    \subreq{RFO-13.2}{\hyperref[uc:UC-13]{UC-13}}{Il sistema deve poter determinare lo stato del download in corso}
+\end{freq}
+
+\paragraph{Facoltativi}
+
+\begin{freq}
+    {RFF-3}
+    {Il sistema deve poter analizzare il layout di Instagram}
+    \label{rf:RFF-3}%
+
+    \subreq{RFF-3.1}{\hyperref[uc:UC-1]{UC-1}}{Il sistema deve poter aprire una tab di Instagram temporanea di un account di test}
+    \subreq{RFF-3.2}{\hyperref[uc:UC-1]{UC-1}, \hyperref[uc:UC-2]{UC-2}}{Il sistema deve essere in grado di verificare che ciascun selettore di un elemento della pagina di Instagram individui correttamente l'elemento corrispondente nella pagina dell'account di test}
+\end{freq}
+
+\begin{freq}
+    {RFF-4}
+    {Il sistema deve gestire le differenze tra i dati raccolti nelle esecuzioni consecutive}
+    \label{rf:RFF-4}%
+
+    \subreq{RFF-4.1}{\hyperref[uc:UC-6]{UC-6}}{Il sistema deve poter calcolare le differenze tra due set di dati raccolti}
+    \subreq{RFF-4.2}{\hyperref[uc:UC-6]{UC-6}}{Il sistema deve rappresentare le differenze calcolate in un formato JSON strutturato}
+\end{freq}
